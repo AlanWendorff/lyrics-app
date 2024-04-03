@@ -18,6 +18,9 @@ Technologies: <br/>
 ![We Got Lyrics - Storybook](https://github.com/AlanWendorff/we-got-lyrics-frontend/assets/62715512/45fd4713-5e59-4f3f-8591-f72790f7c833)
 ![we got lyrics - color scheme](https://github.com/AlanWendorff/we-got-lyrics-frontend/assets/62715512/6d03acd2-a3a3-4243-bc10-92ca84c79584)
 ![we got lyrics - pwa](https://github.com/AlanWendorff/we-got-lyrics-frontend/assets/62715512/dd235a25-8cda-4b92-a2d4-2da4dd857fdf)
+![we got lyrics - architecture cover](https://github.com/AlanWendorff/we-got-lyrics-frontend/assets/62715512/edc316a2-0e91-463f-829a-a3f9251bda56)
+![we got lyrics - folder tree](https://github.com/AlanWendorff/we-got-lyrics-frontend/assets/62715512/b1bdbd14-fbf0-4b3b-8338-25c3e45f12ee)
+![we got lyrics - feature](https://github.com/AlanWendorff/we-got-lyrics-frontend/assets/62715512/7f93b0b1-735e-4221-8ed3-7cf73a7454ac)
 
 [Check it out](https://we-got-lyrics.vercel.app/)
 
