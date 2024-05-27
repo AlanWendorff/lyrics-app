@@ -1,3 +1,5 @@
+/// <reference types="vitest"/>
+
 import * as path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
@@ -10,6 +12,9 @@ export default defineConfig(({ mode }) => {
   return {
     define: {
       'process.env': env
+    },
+    test: {
+      enviroment: 'jsdom'
     },
     plugins: [
       react(),
