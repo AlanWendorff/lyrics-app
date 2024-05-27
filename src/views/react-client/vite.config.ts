@@ -14,7 +14,8 @@ export default defineConfig(({ mode }) => {
       'process.env': env
     },
     test: {
-      enviroment: 'jsdom'
+      environment: 'jsdom',
+      globals: true
     },
     plugins: [
       react(),

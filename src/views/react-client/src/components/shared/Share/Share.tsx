@@ -18,13 +18,18 @@ const Share: FC<IShareProps> = ({ message, skeletonStatus }) => {
 
   return (
     <div className={styles.container}>
-      <button className={styles.button} onClick={() => setIsSocialOpen(!isSocialOpen)} aria-label='Open share options'>
+      <button
+        className={styles.button}
+        onClick={() => setIsSocialOpen(!isSocialOpen)}
+        aria-label='Open share options'
+        data-testid='btn-share'
+      >
         <img src={shareIcon} alt='share icon' />
         Share
       </button>
 
       {isSocialOpen && (
-        <div className={styles.social}>
+        <div className={styles.social} data-testid='social-media'>
           <FacebookShareButton url={window.location.href} hashtag='#music' title={message}>
             <FacebookIcon size={30} round={true} />
           </FacebookShareButton>

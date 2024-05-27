@@ -20,6 +20,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
+    /* types */
+    "types": ["vitest/globals"],
+
     /* Alias, not working in a different file */
     "paths": {
       "@/*": ["./src/*"],
