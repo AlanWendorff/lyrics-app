@@ -7,25 +7,25 @@ describe('Share', () => {
   });
 
   test('should render a share button', () => {
-    expect(screen.findByRole('button')).toBeDefined();
+    expect(screen.queryByRole('button')).toBeDefined();
   });
 
   test('should not show the social media at first instance', () => {
-    expect(screen.findByTestId('social-media')).toBeNull();
+    expect(screen.queryByTestId('social-media')).toBeNull();
   });
 
-  test('should show social media when click event is fired', () => {
-    const btn = screen.getByTestId('btn-share');
+  test('should show social media when click event is fired', async () => {
+    const btn = await screen.findByTestId('btn-share');
     fireEvent.click(btn);
 
-    expect(screen.findByTestId('social-media')).toBeDefined();
+    expect(screen.queryByTestId('social-media')).not.toBeNull();
   });
 
-  test('should hide social media when clicking twice', () => {
-    const btn = screen.getByTestId('btn-share');
+  test('should hide social media when clicking twice', async () => {
+    const btn = await screen.findByTestId('btn-share');
     fireEvent.click(btn);
     fireEvent.click(btn);
 
-    expect(screen.findByTestId('social-media')).toBeNull();
+    expect(screen.queryByTestId('social-media')).toBeNull();
   });
 });
