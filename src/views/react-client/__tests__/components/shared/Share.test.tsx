@@ -1,4 +1,4 @@
-import Share from './Share';
+import Share from '@shared/Share';
 import { render, screen, fireEvent } from '@testing-library/react';
 
 describe('Share', () => {

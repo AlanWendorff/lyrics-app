@@ -42,6 +42,6 @@
       "@core/*": ["../../core/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "__tests__/components/shared/Share.test.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
